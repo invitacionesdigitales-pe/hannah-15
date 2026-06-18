@@ -1,0 +1,576 @@
+.lavishly-yours-regular {
+    font-family: "Lavishly Yours", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fleur-de-leah-regular {
+    font-family: "Fleur De Leah", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.alumni-sans-pinstripe-regular {
+    font-family: "Alumni Sans Pinstripe", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lexend-giga{
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.pinyon-script-regular {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.forum-regular {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+    ESTILOS GENERALES
+*/
+
+body {
+    background-color: #F5F0E6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0 0;
+    margin: 0px;
+}
+
+#container {
+    min-width: 340px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Asegura que el contenido se apile verticalmente */
+}
+
+#mis15 img {
+    width: 50%; /* Cambia el ancho según lo necesites */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+#versiculo {
+    font-size: 1.2rem;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    color: #2B2B2B;
+}
+
+
+#foto1 img {
+    min-width: 340px;
+    max-width: 500px;
+    margin-top: 20px;
+    width: 100%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantén la proporción de la imagen */
+    z-index: 1; /* Asegura que este contenedor esté frente al fondo */
+    position: relative; /* Para que el z-index tenga efecto */
+}
+
+#foto2 img {
+    min-width: 340px;
+    max-width: 500px;
+    width: 100%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantén la proporción de la imagen */
+    z-index: 1; /* Asegura que este contenedor esté frente al fondo */
+    position: relative; /* Para que el z-index tenga efecto */
+}
+
+#fondoPrincipal {
+    background-color: #781331;
+    min-width: 340px;
+    max-width: 500px;
+    text-align: center; /* Centra el texto */
+    align-items: center;
+    margin-top: -80px;
+    padding-bottom: 50px;
+    padding-top: 130px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-size: 100%; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #000000;
+    display: flex;
+    flex-direction: column;        
+    z-index: 0;    
+}
+
+/* Fondo específico para la sección */
+#conFondo {
+    background-color: #f6f6f4; /* Cambia la URL por la de tu imagen */
+    width: 90%; /* Ocupa todo el ancho disponible */
+    background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #000000;
+    text-align: center; /* Centra el texto */
+    align-items: center;
+}
+
+#sello {
+    width: 20%; 
+    height: auto; 
+    margin-top: -43px;
+}
+
+#t1 {
+    font-size: 1.2rem;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 35px;   
+    margin-bottom: 10px;
+
+}
+
+#nombres {
+    font-family: "Pinyon Script", serif;
+    font-size: 4rem;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+#fecha {
+    padding-bottom: 80px;
+}
+
+#fechap {
+    font-size: 2.6rem;
+    font-family: "Pinyon Script", serif;
+    font-style: normal;
+}
+
+#fechaimg {
+    padding-top: 40px;
+    width: 85%;
+    height: auto; 
+}
+
+#playContainer {
+    margin-top: 15px;
+}
+
+#playBtn {
+    background-color: #c8b273;
+    color: #000000;
+    border: none;
+    padding: 10px 18px;
+    font-size: 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+#playBtn:hover {
+    background-color: #857750;
+}
+
+
+/*
+    CUENTA REGRESIVA
+*/
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 3%; /* Espaciado entre elementos en porcentaje */
+    flex-wrap: wrap; /* Permite que los elementos se apilen si no hay espacio */
+}
+
+.countdown-box {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1%; /* Padding en porcentaje */
+    width: 20%; /* Cada caja ocupa el 20% del ancho del contenedor */
+    max-width: 120px; /* Límite para evitar que crezcan demasiado en pantallas grandes */
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto suave al interactuar */
+}
+
+.countdown-box .value {
+    font-size: 2rem; /* Tamaño del texto principal */
+    font-weight: bold;
+    margin-bottom: 0.5em; /* Separación con la etiqueta */
+    color: #333333;
+}
+
+.countdown-box .label {
+    font-size: 0.9rem; /* Tamaño del texto de etiqueta */
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.slideshow-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f4;
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 100%; /* Ajusta el ancho */
+    max-width: 600px;
+    height: auto; /* Ajusta la altura */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 600%; /* Depende del número de imágenes */
+    animation: slide 10s infinite; /* Ajusta el tiempo según el número de imágenes */
+}
+
+.slide {
+    flex: 1 0 100%; /* Cada slide ocupa el 100% del contenedor */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Asegura que la imagen se recorte sin distorsión */
+}
+
+/* Animación */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    16.66% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    36.66% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    56.66% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    76.66% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    96.66% { transform: translateX(-400%); }
+    100% { transform: translateX(-400%); }
+}
+
+#padres h2 {
+    font-size: 3rem;
+    margin-block-end: 0;
+    margin-top: 70px;
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#padres h3 {
+    font-size: 1.5rem;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+}
+
+#padres p {
+    font-size: 1rem;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#padrino h2{
+    font-size: 3rem;
+    margin-block-end: 0;
+    margin-top: 30px;
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#padrino p {
+    font-size: 1rem;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 70px;
+}
+
+
+#lugar {
+    background-color: #781331;
+    min-width: 340px;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;     
+}
+
+#lugarCuadro {
+    background-color: #f6f6f4; /* Cambia la URL por la de tu imagen */
+    width: 90%; /* Ocupa todo el ancho disponible */
+    background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #000000;
+    text-align: center; /* Centra el texto */
+    align-items: center;
+}
+
+#imgLugar {
+    padding-top: 40px;
+    width: 90px; /* Ocupa todo el ancho disponible */
+    height: auto;
+}
+
+#lugar h1 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lugar h2 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+#lugar h3 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lugar button {
+    background-color: #781331;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#nombres {
+    margin: 0;
+}
+
+.footer-fecha {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#itinerario {
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+#itinerario h2{
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#itinerario img{
+    width: 90%;
+    height: auto;
+}
+
+#vestimenta {
+    background-color: #f6f6f4;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;     
+}
+
+#vestimenta img{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 65%;
+    height: auto;
+}
+
+#vestimenta h2 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#vestimenta p {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#formal {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#nota-blanco {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#nota {
+
+    opacity: 0.5;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#ninios {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#regaloFondo {
+    background-color: #781331;
+    min-width: 340px;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;     
+}
+
+#regalo {
+    background-color: #F8F4E9;
+    width: 90%;
+    background-size: 90%;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+}
+
+#regalo h2 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#regalo img {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 8rem;
+    height: auto;
+}
+
+#regalo h3 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#regalo p {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+
+#confirmacion h2 {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#confirmacion p {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+#confirmacion button {
+    background-color: #781331;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#frase {
+    background-color: #f6f6f4;
+    padding-top: 50px;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
