@@ -123,7 +123,7 @@ body {
 
 /* Fondo específico para la sección */
 #conFondo {
-    background-color: #f6f6f4; /* Cambia la URL por la de tu imagen */
+    background-color: #F5F0E6; /* Cambia la URL por la de tu imagen */
     width: 90%; /* Ocupa todo el ancho disponible */
     background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
@@ -232,7 +232,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6f6f4;
+    background-color: #F5F0E6;
     font-family: Arial, sans-serif;
     position: relative;
     width: 100%; /* Ajusta el ancho */
@@ -334,7 +334,7 @@ body {
 }
 
 #lugarCuadro {
-    background-color: #f6f6f4; /* Cambia la URL por la de tu imagen */
+    background-color: #F5F0E6; /* Cambia la URL por la de tu imagen */
     width: 90%; /* Ocupa todo el ancho disponible */
     background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
@@ -397,7 +397,7 @@ body {
 }
 
 #itinerario {
-    background-color: #ffffff;
+    background-color: #F5F0E6;
     padding-bottom: 50px;
 }
 
@@ -417,7 +417,7 @@ body {
 }
 
 #vestimenta {
-    background-color: #f6f6f4;
+    background-color: #F5F0E6;
     padding-bottom: 50px;
     align-items: center;
     padding-top: 50px;
@@ -493,7 +493,7 @@ body {
 }
 
 #regalo {
-    background-color: #f6f6f4;
+    background-color: #F5F0E6;
     width: 90%;
     background-size: 90%;
     background-position: center;
@@ -569,7 +569,7 @@ body {
 }
 
 #frase {
-    background-color: #f6f6f4;
+    background-color: #F5F0E6;
     padding-top: 50px;
     font-family: "Forum", serif;
     font-weight: 400;
