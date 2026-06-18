@@ -85,6 +85,7 @@ body {
     min-width: 340px;
     max-width: 500px;
     margin-top: 20px;
+    margin-bottom: -10px;
     width: 100%;
     width: 100%; /* Ocupa todo el ancho disponible */
     height: auto; /* Mantén la proporción de la imagen */
@@ -108,7 +109,7 @@ body {
     max-width: 500px;
     text-align: center; /* Centra el texto */
     align-items: center;
-    margin-top: -80px;
+    margin-top: -60px;
     padding-bottom: 50px;
     padding-top: 130px;
     width: 100%; /* Ocupa todo el ancho disponible */
