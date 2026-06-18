@@ -109,9 +109,8 @@ body {
     max-width: 500px;
     text-align: center; /* Centra el texto */
     align-items: center;
-    margin-top: -60px;
     padding-bottom: 50px;
-    padding-top: 130px;
+    padding-top: 50px;
     width: 100%; /* Ocupa todo el ancho disponible */
     background-size: 100%; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
