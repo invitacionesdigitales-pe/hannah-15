@@ -71,16 +71,6 @@ body {
     height: auto; /* Mantén la proporción de la imagen */
 }
 
-#versiculo {
-    font-size: 1.2rem;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 20px;
-    color: #2B2B2B;
-}
-
-
 #foto1 img {
     min-width: 340px;
     max-width: 500px;
@@ -386,35 +376,6 @@ body {
     margin: 0;
 }
 
-.footer-fecha {
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-#itinerario {
-    background-color: #F5F0E6;
-    padding-bottom: 50px;
-}
-
-#itinerario h2{
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-#itinerario img{
-    width: 90%;
-    height: auto;
-}
-
 #vestimenta {
     background-color: #F5F0E6;
     padding-bottom: 50px;
@@ -555,7 +516,7 @@ body {
 
 #confirmacion button {
     background-color: #781331;
-    color: #000000;
+    color: #c8b273;
     border: none;
     padding: 10px 15px;
     font-family: "Forum", serif;
@@ -565,12 +526,4 @@ body {
     border-radius: 50px;
     cursor: pointer;
     margin-bottom: 30px;
-}
-
-#frase {
-    background-color: #F5F0E6;
-    padding-top: 50px;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal; 
 }
