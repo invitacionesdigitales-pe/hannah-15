@@ -58,17 +58,58 @@ body {
 }
 
 #container {
-    min-width: 340px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Asegura que el contenido se apile verticalmente */
+  min-width: 340px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#mis15 img {
-    width: 50%; /* Cambia el ancho según lo necesites */
-    height: auto; /* Mantén la proporción de la imagen */
+
+#principal {
+  display: grid;              /* Activamos Grid */
+  grid-template-columns: 1fr; /* Una sola columna */
+  width: 100%;
+  height: auto;               /* La altura se adapta automáticamente a las imágenes */
+}
+
+#principal img {
+  grid-area: 1 / 1 / 2 / 2;   /* CLAVE: Las superpone a todas en la misma celda sin romper el flujo */
+  width: 100%;       
+  height: auto;               /* Evita que se deformen, manteniendo su proporción */
+}
+
+#mis15 {
+  display: grid;              /* Activamos Grid igual que arriba */
+  grid-template-columns: 1fr; 
+  width: 100%;
+  height: auto;               /* Altura automática basada en el fondo */
+  justify-items: center;      /* Centra los elementos hijos horizontalmente */
+  align-items: center;        /* Centra los elementos hijos verticalmente */
+}
+
+#mis15 .fondo-15,
+#mis15 .contenido-texto {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.fondo-15 {
+  width: 100%;
+  height: auto;
+  z-index: 1;                 /* Va abajo */
+}
+
+/* El bloque que contiene todo tu texto y botón */
+.contenido-texto {
+  z-index: 2;                 /* Va arriba del fondo */
+  width: 85%;                 /* Deja un margen del 15% para que el fondo se aprecie en los bordes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 #foto1 img {
