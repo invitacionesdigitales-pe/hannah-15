@@ -234,27 +234,28 @@ body {
 }
 
 .countdown-box {
-    background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1%; /* Padding en porcentaje */
     width: 20%; /* Cada caja ocupa el 20% del ancho del contenedor */
-    max-width: 120px; /* Límite para evitar que crezcan demasiado en pantallas grandes */
+    max-width: 500px; /* Límite para evitar que crezcan demasiado en pantallas grandes */
     text-align: center;
     transition: transform 0.3s ease; /* Efecto suave al interactuar */
 }
 
 .countdown-box .value {
-    font-size: 2rem; /* Tamaño del texto principal */
-    font-weight: bold;
-    margin-bottom: 0.5em; /* Separación con la etiqueta */
+    font-size:  2.5rem; /* Tamaño del texto principal */
+    font-weight: regular;
+    text-align: center;
+    margin-bottom: 0.1em; /* Separación con la etiqueta */
+    margin-right: 0.4em; /* Separación con la parte superior */
+    margin-left: 0.4em; /* Separación con la parte inferior */
     color: #333333;
 }
 
 .countdown-box .label {
-    font-size: 0.9rem; /* Tamaño del texto de etiqueta */
+    font-size: 0.6rem; /* Tamaño del texto de etiqueta */
     color: #666666;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 .slideshow-container {
