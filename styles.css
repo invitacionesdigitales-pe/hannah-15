@@ -1,51 +1,6 @@
-.lavishly-yours-regular {
-    font-family: "Lavishly Yours", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.fleur-de-leah-regular {
-    font-family: "Fleur De Leah", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-mono {
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.alumni-sans-pinstripe-regular {
-    font-family: "Alumni Sans Pinstripe", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.lexend-giga{
-    font-family: "Lexend Giga", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.pinyon-script-regular {
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.forum-regular {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* 
-    ESTILOS GENERALES
-*/
-
+/* ==========================================
+   FUENTES Y CONFIGURACIÓN GENERAL
+   ========================================== */
 body {
     background-color: #F5F0E6;
     font-family: Arial, sans-serif;
@@ -53,494 +8,143 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 0 0;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 #container {
-  min-width: 340px;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    min-width: 340px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
-
+/* ==========================================
+   SECCIÓN PRINCIPAL (SUPERPOSICIÓN)
+   ========================================== */
 #principal {
-  display: grid;              /* Activamos Grid */
-  grid-template-columns: 1fr; /* Una sola columna */
-  width: 100%;
-  height: auto;               /* La altura se adapta automáticamente a las imágenes */
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
 }
 
 #principal img {
-  grid-area: 1 / 1 / 2 / 2;   /* CLAVE: Las superpone a todas en la misma celda sin romper el flujo */
-  width: 100%;       
-  height: auto;               /* Evita que se deformen, manteniendo su proporción */
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;       
+    height: auto;
 }
 
-#mis15 {
-  display: grid;              /* Activamos Grid igual que arriba */
-  grid-template-columns: 1fr; 
-  width: 100%;
-  height: auto;               /* Altura automática basada en el fondo */
-  justify-items: center;      /* Centra los elementos hijos horizontalmente */
-  align-items: center;        /* Centra los elementos hijos verticalmente */
-}
-
-#mis15 .fondo-15,
-#mis15 .contenido-texto {
-  grid-area: 1 / 1 / 2 / 2;
+/* ==========================================
+   ESTRUCTURA DE IMÁGENES DE FONDO FIJAS
+   ========================================== */
+.bloque-con-fondo {
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .fondo-15 {
-  width: 100%;
-  height: auto;
-  z-index: 1;                 /* Va abajo */
-}
-
-/* El bloque que contiene todo tu texto y botón */
-.contenido-texto {
-  z-index: 2;                 /* Va arriba del fondo */
-  width: 85%;                 /* Deja un margen del 15% para que el fondo se aprecie en los bordes */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-#foto1 img {
-    min-width: 340px;
-    max-width: 500px;
-    margin-top: 20px;
-    margin-bottom: -10px;
     width: 100%;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: auto; /* Mantén la proporción de la imagen */
-    z-index: 1; /* Asegura que este contenedor esté frente al fondo */
-    position: relative; /* Para que el z-index tenga efecto */
+    height: auto;
+    display: block;
+    z-index: 1;
 }
 
-#foto2 img {
-    min-width: 340px;
-    max-width: 500px;
-    width: 100%;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: auto; /* Mantén la proporción de la imagen */
-    z-index: 1; /* Asegura que este contenedor esté frente al fondo */
-    position: relative; /* Para que el z-index tenga efecto */
-}
-
-#fondoPrincipal {
-    background-color: #781331;
-    min-width: 340px;
-    max-width: 500px;
-    text-align: center; /* Centra el texto */
-    align-items: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    background-size: 100%; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    color: #000000;
-    display: flex;
-    flex-direction: column;        
-    z-index: 0;    
-}
-
-/* Fondo específico para la sección */
-#conFondo {
-    background-color: #F5F0E6; /* Cambia la URL por la de tu imagen */
-    width: 90%; /* Ocupa todo el ancho disponible */
-    background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    color: #000000;
-    text-align: center; /* Centra el texto */
-    align-items: center;
-}
-
-#sello {
-    width: 20%; 
-    height: auto; 
-    margin-top: -43px;
-}
-
-#t1 {
-    font-size: 1.2rem;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin-top: 35px;   
-    margin-bottom: 10px;
-
-}
-
-#nombres {
-    font-family: "Pinyon Script", serif;
-    font-size: 4rem;
-    font-style: normal;
-    padding-top: 50px;
+/* ==========================================
+   CÓMO EDITAR LAS POSICIONES DESDE CSS
+   ========================================== */
+#playContainer {
+    position: absolute;
+    z-index: 2;
+    top: 28%;   
+    left: 50%;  
+    transform: translate(-50%, -50%); 
 }
 
 #fecha {
-    padding-bottom: 80px;
+    position: absolute;
+    z-index: 2;
+    width: 85%; 
+    bottom: 37%; 
+    left: 50%;   
+    transform: translateX(-50%);
 }
 
-#fechap {
-    font-size: 2.6rem;
-    font-family: "Pinyon Script", serif;
-    font-style: normal;
+.elemento-flotante {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%); 
 }
 
-#fechaimg {
-    padding-top: 40px;
-    width: 85%;
-    height: auto; 
-}
-
-#playContainer {
-    margin-top: 15px;
-}
-
-#playBtn {
+/* ==========================================
+   ELEMENTOS INTERNOS (BOTONES Y RELOJ)
+   ========================================== */
+#playBtn, .btn-dorado-redondeado {
     background-color: #c8b273;
     color: #000000;
     border: none;
-    padding: 10px 18px;
-    font-size: 2rem;
     border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 5%;
+    transition: background-color 0.3s;
+    font-family: "Forum", serif;
 }
 
-#playBtn:hover {
+#playBtn {
+    padding: 10px 18px;
+    font-size: 2rem;
+}
+
+.btn-dorado-redondeado {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+#playBtn:hover, .btn-dorado-redondeado:hover {
     background-color: #857750;
 }
-
-
-/*
-    CUENTA REGRESIVA
-*/
 
 .countdown-container {
     display: flex;
     justify-content: center;
-    gap: 3%; /* Espaciado entre elementos en porcentaje */
-    flex-wrap: wrap; /* Permite que los elementos se apilen si no hay espacio */
+    gap: 3%;
 }
 
 .countdown-box {
     border-radius: 8px;
-    padding: 1%; /* Padding en porcentaje */
-    width: 20%; /* Cada caja ocupa el 20% del ancho del contenedor */
-    max-width: 500px; /* Límite para evitar que crezcan demasiado en pantallas grandes */
+    padding: 1%;
+    width: 20%;
     text-align: center;
-    transition: transform 0.3s ease; /* Efecto suave al interactuar */
 }
 
 .countdown-box .value {
-    font-size:  2.5rem; /* Tamaño del texto principal */
-    font-weight: regular;
-    text-align: center;
-    margin-bottom: 0.1em; /* Separación con la etiqueta */
-    margin-right: 0.4em; /* Separación con la parte superior */
-    margin-left: 0.4em; /* Separación con la parte inferior */
+    font-size: 2.5rem;
     color: #333333;
+    margin: 0;
 }
 
 .countdown-box .label {
-    font-size: 0.6rem; /* Tamaño del texto de etiqueta */
+    font-size: 0.6rem;
     color: #666666;
     text-align: center;
 }
 
-.slideshow-container {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ==========================================
+   SECCIÓN CONFIRMACIÓN
+   ========================================== */
+#confirmacion {
     background-color: #F5F0E6;
-    font-family: Arial, sans-serif;
-    position: relative;
-    width: 100%; /* Ajusta el ancho */
-    max-width: 600px;
-    height: auto; /* Ajusta la altura */
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.slides {
-    display: flex;
-    width: 600%; /* Depende del número de imágenes */
-    animation: slide 10s infinite; /* Ajusta el tiempo según el número de imágenes */
-}
-
-.slide {
-    flex: 1 0 100%; /* Cada slide ocupa el 100% del contenedor */
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Asegura que la imagen se recorte sin distorsión */
-}
-
-/* Animación */
-@keyframes slide {
-    0% { transform: translateX(0%); }
-    16.66% { transform: translateX(0%); }
-    20% { transform: translateX(-100%); }
-    36.66% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    56.66% { transform: translateX(-200%); }
-    60% { transform: translateX(-300%); }
-    76.66% { transform: translateX(-300%); }
-    80% { transform: translateX(-400%); }
-    96.66% { transform: translateX(-400%); }
-    100% { transform: translateX(-400%); }
-}
-
-#padres h2 {
-    font-size: 3rem;
-    margin-block-end: 0;
-    margin-top: 70px;
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#padres h3 {
-    font-size: 1.5rem;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-style: normal;
-}
-
-#padres p {
-    font-size: 1rem;
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-#padrino h2{
-    font-size: 3rem;
-    margin-block-end: 0;
-    margin-top: 30px;
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#padrino p {
-    font-size: 1rem;
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    padding-bottom: 70px;
-}
-
-
-#lugar {
-    background-color: #781331;
-    min-width: 340px;
-    max-width: 500px;
     width: 100%;
     padding-bottom: 50px;
-    align-items: center;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;     
-}
-
-#lugarCuadro {
-    background-color: #F5F0E6; /* Cambia la URL por la de tu imagen */
-    width: 90%; /* Ocupa todo el ancho disponible */
-    background-size: 90%; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    color: #000000;
-    text-align: center; /* Centra el texto */
-    align-items: center;
-}
-
-#imgLugar {
-    padding-top: 40px;
-    width: 90px; /* Ocupa todo el ancho disponible */
-    height: auto;
-}
-
-#lugar h1 {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#lugar h2 {
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.7rem;
-    margin: 0;
-}
-
-#lugar h3 {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#lugar button {
-    background-color: #781331;
-    color: #c8b273;
-    border: none;
-    padding: 10px 15px;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: bold;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-
-#nombres {
-    margin: 0;
-}
-
-#vestimenta {
-    background-color: #F5F0E6;
-    padding-bottom: 50px;
-    align-items: center;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;     
-}
-
-#vestimenta img{
-    padding-top: 25px;
-    padding-bottom: 40px;
-    width: 65%;
-    height: auto;
-}
-
-#vestimenta h2 {
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    margin: 0;
-}
-
-#vestimenta p {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#formal {
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-#nota-blanco {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-#nota {
-
-    opacity: 0.5;
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-#ninios {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2rem;
-    margin: 0;
-    margin-top: 50px;
-}
-
-#regaloFondo {
-    background-color: #781331;
-    min-width: 340px;
-    max-width: 500px;
-    width: 100%;
-    padding-bottom: 50px;
-    align-items: center;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;     
-}
-
-#regalo {
-    background-color: #F5F0E6;
-    width: 90%;
-    background-size: 90%;
-    background-position: center;
-    color: #000000;
-    text-align: center;
-    align-items: center;
-}
-
-#regalo h2 {
-    font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    margin: 0;
-    padding-top: 50px;
-}
-
-#regalo img {
-    padding-top: 25px;
-    padding-bottom: 40px;
-    width: 8rem;
-    height: auto;
-}
-
-#regalo h3 {
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2rem;
-    margin: 0;
-    padding-bottom: 20px;
-}
-
-#regalo p {
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    padding-bottom: 30px;
 }
 
 #confirmacion h2 {
     font-family: "Pinyon Script", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 3rem;
     margin: 0;
     padding-top: 50px;
@@ -549,8 +153,6 @@ body {
 
 #confirmacion p {
     font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.2rem;
     margin: 0;
     padding-bottom: 50px;
@@ -562,10 +164,156 @@ body {
     border: none;
     padding: 10px 15px;
     font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: bold;
     font-size: 1.2rem;
     border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 30px;
+}
+
+/* ==========================================
+   ANIMACIÓN DE ENTRADA (CASCADA)
+   ========================================== */
+.animar-entrada {
+    opacity: 0; 
+    transform: translateY(-40px); 
+    animation: aparecerYDeslizar 1.2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
+
+@keyframes aparecerYDeslizar {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+/* ==========================================
+   CONTENEDORES FIJOS GLOBALES (PANTALLA COMPLETA)
+   ========================================== */
+.glitter-container, .mariposas-container {
+    position: fixed; /* Asegura el fixed constante */
+    top: 0;
+    left: 0;
+    width: 100vw;    
+    height: 100vh;   
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+.glitter-container { z-index: 999; }
+.mariposas-container { z-index: 1000; }
+
+/* ==========================================
+   EFECTO GLITTER / BRILLOS (CON RITMOS ALEATORIOS)
+   ========================================== */
+.brillo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom: 15px solid rgba(200, 178, 115, 0.9); 
+    opacity: 0;
+    /* Por defecto */
+    animation: destelloGlitter 2.3s infinite ease-in-out;
+}
+
+.brillo:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 15px solid rgba(200, 178, 115, 0.9);
+}
+
+/* TRUCO DE ALEATORIEDAD: Variamos la velocidad del parpadeo por grupos usando :nth-child */
+.glitter-container .brillo:nth-child(3n) { animation-duration: 1.7s; }
+.glitter-container .brillo:nth-child(3n+1) { animation-duration: 2.9s; }
+.glitter-container .brillo:nth-child(3n+2) { animation-duration: 3.4s; }
+
+@keyframes destelloGlitter {
+    0%, 100% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg); /* Rota más para mayor dinamismo */
+        filter: drop-shadow(0 0 5px #c8b273); 
+    }
+}
+
+/* ==========================================
+   EFECTO MARIPOSAS VOLADORAS (TRAYECTOS DESINCRONIZADOS)
+   ========================================== */
+.mariposa {
+    position: absolute;
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+/* TRUCO DE ALEATORIEDAD: Tiempos de vuelo primos para que nunca se sincronicen */
+.mariposas-container .mariposa:nth-child(1) { animation: vueloMariposaA 11s infinite linear; }
+.mariposas-container .mariposa:nth-child(2) { animation: vueloMariposaB 14s infinite linear; }
+.mariposas-container .mariposa:nth-child(3) { animation: vueloMariposaC 17s infinite linear; }
+.mariposas-container .mariposa:nth-child(4) { animation: vueloMariposaB 13s infinite linear; }
+.mariposas-container .mariposa:nth-child(5) { animation: vueloMariposaA 19s infinite linear; }
+.mariposas-container .mariposa:nth-child(6) { animation: vueloMariposaC 15s infinite linear; }
+
+.ala-izq, .ala-der {
+    width: 20px;
+    height: 25px;
+    background: #c8b273; 
+    opacity: 0.85;
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: 0 0 8px rgba(200, 178, 115, 0.5);
+}
+
+.ala-izq {
+    transform-origin: right center;
+    animation: aleteoIzq 0.25s infinite ease-in-out alternate;
+    border-top-left-radius: 70% 80%;
+}
+
+.ala-der {
+    transform-origin: left center;
+    animation: aleteoDer 0.25s infinite ease-in-out alternate;
+    border-top-right-radius: 70% 80%;
+}
+
+@keyframes aleteoIzq {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(75deg); }
+}
+
+@keyframes aleteoDer {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(-75deg); }
+}
+
+/* ==========================================
+   3 RUTAS DE VUELO DIFERENTES PARA EVITAR EL MISMO PATRÓN
+   ========================================== */
+
+/* Ruta A: Curva estándar tirando hacia arriba */
+@keyframes vueloMariposaA {
+    0% { left: -15%; transform: translateY(0px) rotate(15deg); }
+    30% { transform: translateY(-60px) rotate(30deg); }
+    60% { transform: translateY(20px) rotate(5deg); }
+    100% { left: 115%; transform: translateY(-30px) rotate(20deg); }
+}
+
+/* Ruta B: Ondulada profunda de abajo hacia arriba */
+@keyframes vueloMariposaB {
+    0% { left: -15%; transform: translateY(40px) rotate(5deg); }
+    40% { transform: translateY(-80px) rotate(35deg); }
+    75% { transform: translateY(50px) rotate(-10deg); }
+    100% { left: 115%; transform: translateY(0px) rotate(15deg); }
+}
+
+/* Ruta C: Vuelo más recto y veloz con pequeñas caídas */
+@keyframes vueloMariposaC {
+    0% { left: -15%; transform: translateY(-20px) rotate(20deg); }
+    50% { transform: translateY(40px) rotate(0deg); }
+    100% { left: 115%; transform: translateY(-40px) rotate(25deg); }
 }
