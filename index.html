@@ -27,7 +27,6 @@
             height: 100vh;
             max-height: 800px;
             position: relative;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             overflow: hidden;
             background-color: #fff;
         }
@@ -41,12 +40,13 @@
         }
 
         /* Enlace del sobre posicionado exactamente en el centro */
-        .envelope-link {
+       .envelope-link {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-47%, -50%);
-            width: 85%; /* Controla el ancho del sobre dentro del teléfono */
+            /* Reemplazamos la transformación anterior por la compensación exacta para el centro */
+            transform: translate(-50%, -50%);
+            width: 80%; /* Mantenemos el ancho deseado */
             display: block;
             text-decoration: none;
             cursor: pointer;
