@@ -3,6 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años Hannah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        /* Contenedor que simula la pantalla de un celular (proporción 9:16) */
+        .invitation-container {
+            width: 100%;
+            max-width: 450px;
+            height: 100vh;
+            max-height: 800px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        /* Enlace que cubre toda la invitación */
+        .invitation-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            position: relative;
+        }
+
+        /* Imagen de fondo (3.jpg) */
+        .background-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Imagen del sobre superpuesta (2 - copia.jpg) */
+        .envelope-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%; /* Ajusta este porcentaje si deseas el sobre más grande o más chico */
+            height: auto;
+            max-height: 70%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto sutil al pasar el mouse por encima (opcional) */
+        .invitation-link:hover .envelope-img {
+            transform: translate(-50%, -50%) scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-container">
+        <a href="https://invitacionesdigitales-pe.github.io/hannah-15/" class="invitation-link" target="_blank">
+            
+            <img src="assets/fondo.png" alt="Fondo Mis XV Años" class="background-img">
+            
+            <img src="assets/sobre.png" alt="Sobre de Invitación" class="envelope-img">
+            
+        </a>
+    </div>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,4 +255,4 @@
         }, 1000);
     </script>
 </body>
-</html>
+</html> -->
